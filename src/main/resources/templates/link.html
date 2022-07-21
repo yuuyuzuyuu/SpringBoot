@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+        <title>Java Site</title>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+        <style>
+        h1 { font-size:18pt; }
+        </style>
+</head>
+<body>
+    <h1>Top</h1>
+</body>
+    <p><a th:href="@{/nextpage/{aid}(aid=${id})}">link</a></p>
+    <p><a th:href="@{/nextpage/{aid}(aid=${param.id[0]})}">link2</a></p>
+    <p><a th:href="@{/nextpage/(id=${param.id[0]})}">link3</a></p>
+</html>
